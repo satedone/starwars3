@@ -4,7 +4,7 @@ import ItemDescription from "../ItemDescription/ItemDescription.js";
 import React, { useState, useEffect } from "react";
 import { getData } from "../../services/swDataHandler";
 
-const imageUrlBase = "https://starwars-visualguide.com/assets/img/";
+const imageUrlBase = 'https://starwars-visualguide.com/assets/img/';
 
 function App() {
   const [data, setData] = useState({});
@@ -24,8 +24,8 @@ function App() {
 
   return (
     <div className="app">
-      <Header switchEntity={setEntity} />
-      <NextButton next={nextObj} />
+      {/* <Header switchEntity={setEntity} />
+      <NextButton next={nextObj} /> */}
       <ItemDescription
         imgUrl={`${imageUrlBase}${
           entity === "people" ? "characters" : entity

@@ -31,8 +31,10 @@ async function getStarship(data) {
 
 export async function getData(id, entity) {
   try {
+    console.log("get data");
     const data = (await axios.get(`${BASE_URL}${entity}/${id}`)).data.result
         .properties;
+    console.log(data);
     switch (entity) {
       case "people":
         return await getPerson(data);

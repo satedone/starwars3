@@ -2,8 +2,7 @@ import "./itemDescription.css";
 
 export default function ItemDescription({ imgUrl, data }) {
   const { name, ...otherData } = data;
-
-  return (
+    return (
     <div className="itemDescription">
       <img
         className="itemImage"
@@ -26,3 +25,4 @@ export default function ItemDescription({ imgUrl, data }) {
     </div>
   );
 }
+
